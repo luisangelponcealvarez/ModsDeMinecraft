@@ -1,0 +1,147 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "new:tumba",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "drop",
+          "tp_item"
+        ]
+      },
+      "animations": {
+        "drop": "controller.animation.drop",
+        "tp_item": "controller.animation.tp_item"
+      }
+    },
+    "component_groups": {
+      "death": {
+        "minecraft:is_stackable": {},
+        "minecraft:health": {
+          "value": 0,
+          "max": 0,
+          "min": 0
+        }
+      },
+      "pickup_item_timer": {
+        "minecraft:timer": {
+          "time": 2,
+          "time_down_event": {
+            "event": "new:stop_pickup_item"
+          }
+        },
+        "minecraft:behavior.pickup_items": {
+          "priority": 0,
+          "max_dist": 10,
+          "goal_radius": 10,
+          "speed_multiplier": 0
+        },
+        "minecraft:item_hopper": {},
+        "minecraft:collision_box": {
+          "width": 10,
+          "height": 10
+        }
+      },
+      "not_pickup_item": {
+        "minecraft:collision_box": {
+          "width": 1,
+          "height": 1
+        }
+      }
+    },
+    "components": {
+      "minecraft:is_chested": {},
+      "minecraft:inventory": {
+        "container_type": "inventory",
+        "inventory_size": 48,
+        "private": true
+      },
+      "minecraft:nameable": {
+		    "always_show": true
+  	  },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "operator": "==",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "new:key"
+                  }
+                ]
+              },
+              "event": "new:entity_death"
+            },
+            "interact_text": "Open",
+            "use_item": true
+          }
+        ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1,
+        "min": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "pickup_item_timer"
+          ]
+        }
+      },
+      "new:entity_death": {
+        "run_command": {
+          "command": [
+            "effect @s invisibility 2000 255 true"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "death"
+          ]
+        }
+      },
+      "new:stop_pickup_item": {
+        "add": {
+          "component_groups": [
+            "not_pickup_item"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "pickup_item_timer"
+          ]
+        }
+      }
+    }
+  }
+}

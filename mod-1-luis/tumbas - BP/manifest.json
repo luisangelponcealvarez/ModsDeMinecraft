@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "tumbas",
+    "name": "tumbas",
+    "uuid": "cc1331fd-d963-4e55-b049-cb2cfdb42e0b",
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ],
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "0f5ba516-486b-46bb-a3cf-f4425c2c35fb",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "626e9397-b19e-4c00-97cf-e20fe5736862",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
