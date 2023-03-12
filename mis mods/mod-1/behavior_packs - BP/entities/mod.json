@@ -1,0 +1,27 @@
+{
+  "format_version": "1.19.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mod-1:mod",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:physics": {},
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:movement.basic": {
+        "max_turn": 30
+      },
+      "minecraft:navigation.walk": {},
+      "minecraft:behavior.random_stroll": {
+        "interval": 120,
+        "xz_dist": 10,
+        "y_dist": 7
+      }
+    },
+    "events": {}
+  }
+}

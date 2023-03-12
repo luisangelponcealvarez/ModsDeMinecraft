@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "mod-1",
+    "name": "mod-1",
+    "uuid": "a6200746-9622-40c0-950f-c88984c3ec52",
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ],
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "39304ab9-7159-4194-b62b-7a3aea83b957",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "c14891f7-9d87-4595-8c2b-890de9df7829",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

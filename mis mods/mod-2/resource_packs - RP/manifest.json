@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "resorce-mod-1",
+    "name": "resorce-mod-1",
+    "uuid": "c14891f7-9d87-4595-8c2b-890de9df7829",
+    "min_engine_version": [
+      1,
+      16,
+      0
+    ],
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "ce8f90b9-9c25-46bd-8429-a3dcad4b8d70",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

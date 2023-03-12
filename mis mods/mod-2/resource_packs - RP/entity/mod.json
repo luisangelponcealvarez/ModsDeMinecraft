@@ -1,0 +1,24 @@
+{
+  "format_version": "1.19.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mod-2:mod",
+      "materials": {
+        "default": "entity_custom"
+      },
+      "textures": {
+        "default": "textures/entity/AshKetchum"
+      },
+      "geometry": {
+        "default": "geometry.charmander"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "base_color": "#0dc9c6",
+        "overlay_color": "#0ad829"
+      }
+    }
+  }
+}
