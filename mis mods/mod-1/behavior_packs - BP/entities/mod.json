@@ -6,7 +6,24 @@
       "is_spawnable": true,
       "is_summonable": true
     },
-    "component_groups": {},
+    "component_groups": {
+      "explot:explode":{
+        "minecraft:explode": {
+          "breaks_blocks": true,
+          "causes_fire": false,
+          "destroy_affected_by_griefing": false,
+          "fire_affected_by_griefing": false,
+          "fuse_lit": true,
+          "max_resistance": 0,
+          "power": 3
+        }
+      },
+      "desapareser:despawn":{
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      }
+    },
     "components": {
       "minecraft:physics": {},
       "minecraft:movement": {
@@ -20,8 +37,57 @@
         "interval": 120,
         "xz_dist": 10,
         "y_dist": 7
+      },
+      "minecraft:rideable": {
+        "controlling_seat": 0,
+        "crouching_skip_interact": true,
+        "family_types": [],
+        "interact_text": "montar",
+        "pull_in_entities": false,
+        "rider_can_interact": false,
+        "seat_count": 1,
+        "seats": [
+          {
+            "position": [
+              0,
+              0.9,
+              -0.1
+            ]
+          }
+        ]
+      },
+      "minecraft:input_ground_controlled": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "entity_attack",
+            "deals_damage": true,
+            "on_damage":{
+              "event": "explode"
+            }
+          }
+        ]
       }
     },
-    "events": {}
+    "events": {
+      "explode":{
+       "randomize": [
+        {
+          "add": {
+            "component_groups": [
+              "explot:explode"
+            ]
+          }
+        },
+        {
+          "add": {
+            "component_groups": [
+              "desapareser:despawn"
+            ]
+          }
+        }
+       ]
+      }
+    }
   }
 }
