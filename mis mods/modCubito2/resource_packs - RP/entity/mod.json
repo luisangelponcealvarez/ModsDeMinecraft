@@ -7,17 +7,17 @@
         "default": "entity_custom"
       },
       "textures": {
-        "default": "textures/entity/AshKetchum"
+        "default": "textures/entity/mod-2.png"
       },
       "geometry": {
-        "default": "geometry.charmander"
+        "default": "geometry.animal-1"
       },
       "render_controllers": [
         "controller.render.default"
       ],
       "spawn_egg": {
-        "base_color": "#0dc9c6",
-        "overlay_color": "#0ad829"
+        "base_color": "#797979",
+        "overlay_color": "#14d3e0"
       }
     }
   }
