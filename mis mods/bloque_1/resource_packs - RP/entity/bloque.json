@@ -1,0 +1,25 @@
+{
+  "format_version": "1.19.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:entity",
+      "materials": {
+        "default": "entity_custom"
+      },
+      "textures": {
+        "default": "textures/entity/bloqueTx.png"
+      },
+      "geometry": {
+        "default": "geometry.bloque"
+      },
+      "animations": {},
+      "particle_effects": {},
+      "scripts": {},
+      "render_controllers": ["controller.render.entity"],
+      "spawn_egg": {
+        "base_color": "#777777",
+        "overlay_color": "#dadada"
+      }
+    }
+  }
+}

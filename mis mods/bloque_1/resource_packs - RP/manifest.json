@@ -1,0 +1,29 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "bloque de decoración",
+        "name": "custom block",
+        "uuid": "e761fa2d-18d8-40f6-9e38-c32d9a1a1082",
+        "min_engine_version": [
+            1,
+            16,
+            0
+        ],
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "289e6877-634d-441e-94f6-47eb5239d47f",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}
