@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+        "name": "Tumbas Addon §9Resource Pack",
+        "uuid": "9fc53a12-7b83-4d48-b161-d05ee0e45974",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 13, 0]
+    },
+    "modules": [
+        {
+            "description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+            "type": "resources",
+            "uuid": "fdbd8e77-945f-4809-a179-21e55268e10a",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "ef2effa0-1cdf-44a3-ba0f-0b6cb604f603",
+            "version": [1, 0, 0]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+        "name": "Tumbas Addon §9Behavior Pack",
+        "uuid": "ef2effa0-1cdf-44a3-ba0f-0b6cb604f603",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 13, 0]
+    },
+    "modules": [
+        {
+            "description": "§a§l[Use Experimental Mode]\n§3§lMade by SystemTv Twitter@SystemTv_",
+            "type": "data",
+            "uuid": "53fa033d-3724-4302-b23d-cbb2b444b0d4",
+            "version": [1, 0, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "9fc53a12-7b83-4d48-b161-d05ee0e45974",
+            "version": [1, 0, 0]
+        }
+    ]
+}

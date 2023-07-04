@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "new:tumba",
+      "materials": {
+        "default": "zombie"
+      },
+      "textures": {
+        "default": "textures/entity/tumba"
+      },
+      "geometry": {
+        "default": "geometry.tumba"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

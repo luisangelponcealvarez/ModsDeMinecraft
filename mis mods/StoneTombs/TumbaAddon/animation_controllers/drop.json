@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.drop": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "drop": "query.is_stackable"
+            }
+          ]
+        },
+        "drop": {
+          "on_entry": [
+            "/tp @p[type=item,r=2] ~~~",
+            "/function kill_chest"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_stackable"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

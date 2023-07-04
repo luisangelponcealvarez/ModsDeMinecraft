@@ -1,0 +1,23 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "new:key",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:allow_off_hand": true,
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability":{
+        "max_durability": 1
+      },
+      "minecraft:icon": {
+        "texture": "llave"
+      },
+      "minecraft:foil": true,
+      "minecraft:display_name": {
+        "value": "Llave\n§l§cPara abrir Tumbas"
+      }
+    }
+  }
+}
